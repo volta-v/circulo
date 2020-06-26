@@ -11,20 +11,27 @@ window.onload = function () {
 			console.log(event)
 			
 
-		if (event.key == "ArrowUp" && parseInt(circle.style.top) > 1) {
+		if (event.key == "ArrowUp") {
 			// console.log("arriba")
 	 	circle.style.top = `${parseInt(circle.style.top) - modifier}%`
+	 	circle.style.left = `${parseInt(circle.style.left) - modifier}%`
+
+
 	  } 
 
 	  if (event.key == "ArrowDown") {
 	  	// console.log("abajo")
-	 	circle.style.top = `${parseInt(circle.style.top) + modifier}%`
+	  	
+	  	circle.style.top = `${parseInt(circle.style.top) + modifier}%`
+	 	
+
+	  
 	  }
 
-	  if (event.key == "ArrowLeft") {
-	  	// console.log("abajo")
-	 	circle.style.left = `${parseInt(circle.style.left) - modifier}%`
-	  }
+	  // if (event.key == "ArrowLeft") {
+	  // 	// console.log("abajo")
+	 	// circle.style.left = `${parseInt(circle.style.left) - modifier}%`
+	  // }
 
 	  if (event.key == "ArrowRight") {
 	  	// console.log("abajo")
